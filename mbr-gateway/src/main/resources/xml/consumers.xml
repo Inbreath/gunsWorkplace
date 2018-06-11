@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	     http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!--<dubbo:monitor protocol="registry" />-->
+
+    <dubbo:reference id="mchtFacade" interface="com.ums.mbr.service.facade.MchtFacade"/>
+
+    <dubbo:reference id="gdaTxnFacade" interface="com.ums.mbr.service.facade.TransactionFacade"/>
+
+    <dubbo:reference id="termFacade" interface="com.ums.mbr.service.facade.TermFacade"/>
+
+    <dubbo:reference id="bizTypeFacade" interface="com.ums.mbr.service.facade.BizTypeFacade"/>
+
+    <dubbo:reference id="sysTxnFacade" interface="com.ums.mbr.service.facade.SystemTransFacade"/>
+
+</beans>
