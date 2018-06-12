@@ -28,7 +28,7 @@ public class EntityGenerator {
         AutoGenerator mpg = new AutoGenerator();
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
-        gc.setOutputDir("G:\\WorkPlaceGuns\\guns\\guns-rest\\src\\main\\java");//这里写你自己的java目录
+        gc.setOutputDir("G:\\WorkPlaceGunsLearning\\guns-rest\\src\\main\\java");//这里写你自己的java目录
         gc.setFileOverride(true);//是否覆盖
         gc.setActiveRecord(true);
         gc.setEnableCache(false);// XML 二级缓存
@@ -49,7 +49,7 @@ public class EntityGenerator {
         });
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("");
+        dsc.setPassword("123456");
         dsc.setUrl("jdbc:mysql://127.0.0.1:3306/rest?characterEncoding=utf8");
         mpg.setDataSource(dsc);
 
