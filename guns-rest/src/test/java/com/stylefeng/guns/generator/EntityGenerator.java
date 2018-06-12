@@ -26,7 +26,6 @@ public class EntityGenerator {
     @Test
     public void entityGenerator() {
         AutoGenerator mpg = new AutoGenerator();
-zz
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         gc.setOutputDir("G:\\WorkPlaceGuns\\guns\\guns-rest\\src\\main\\java");//这里写你自己的java目录
