@@ -15,6 +15,7 @@ public class HouseController {
     @Autowired
     private ITblHouseService iTblHouseService;
 
+    @RequestMapping("test02")
     public TblHouse test02 (TblHouse house) {
 
         System.out.println("house="+house);
