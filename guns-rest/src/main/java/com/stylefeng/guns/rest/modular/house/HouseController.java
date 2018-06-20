@@ -4,6 +4,7 @@ package com.stylefeng.guns.rest.modular.house;
 import com.stylefeng.guns.rest.modular.house.service.ITblHouseService;
 import com.stylefeng.guns.rest.persistence.model.TblHouse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +17,7 @@ public class HouseController {
     private ITblHouseService iTblHouseService;
 
     @RequestMapping("test02")
-    public TblHouse test02 (TblHouse house) {
+    public TblHouse test02 (@RequestBody TblHouse house) {
 
         System.out.println("house="+house);
 
